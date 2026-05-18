@@ -13,13 +13,6 @@ services:
       - 3000
     networks:
       - dokploy-network
-      
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.next-app.rule=Host(`next-app.mutolowidi.de`)
-      - traefik.http.routers.next-app.entrypoints=websecure
-      - traefik.http.routers.next-app.tls.certResolver=letsencrypt
-      - traefik.http.services.next-app.loadbalancer.server.port=3000
 
 networks:
   dokploy-network:
