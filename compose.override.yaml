@@ -1,6 +1,0 @@
-services:
-  app:
-    image: nginx
-    ports: !reset []
-    environment:
-      FOO: !reset null
