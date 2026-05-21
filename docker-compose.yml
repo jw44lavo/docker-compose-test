@@ -15,8 +15,6 @@ services:
     build: ./api
     depends_on:
       - db
-    expose:
-      - "3000"
     #ports:
     #  - "3000:3000"
 
